@@ -62,6 +62,7 @@ Vue.component('doctor', require('./components/doctor/Doctor.vue'));
 Vue.component('atenocup', require('./components/atencionocupacional/AtencionOcupacional.vue'));
 Vue.component('triaje', require('./components/triaje/Triaje.vue'));
 Vue.component('dermatologia', require('./components/dermatologia/Dermatoologia.vue'));
+Vue.component('antecedentes', require('./components/antecedentes/Antecedentes.vue'));
 const app = new Vue({
     el: '#app'
 });

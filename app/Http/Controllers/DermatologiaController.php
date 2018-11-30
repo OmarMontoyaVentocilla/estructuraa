@@ -8,6 +8,8 @@ use App\Atention;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Dermatologia;
+use App\Doctor;
+use App\User;
 
 class DermatologiaController extends Controller
 {
@@ -96,16 +98,22 @@ class DermatologiaController extends Controller
         $valor_orden_derma=$request->get('orden');
         $idpaciente=$request->get('idpaciente');  
        
-          //poner el idpaciente
+        //poner el idpaciente
         $idpaciente=Atention::where('id',$valor_orden_derma)->where('estado',"1")->select('id_paciente')->get();
         
         //atendido
         $atendido=Dermatologia::select('atendido')->where('idcomprobante',$valor_orden_derma)->where('estado',"1")->get();
 
+        //doctores
+        $dermatologia_doctores=Doctor::join('users', 'doctors.idsuariod', '=', 'users.id')
+                            ->select("users.name",'users.id')
+                            ->where('doctors.estado',1)
+                            ->get();
+
         if($valor_orden_derma!=''){
             $existe_atencion=Atention::where('id',$valor_orden_derma)->where('estado',1)->count();
             if($existe_atencion!=''){
-                return  view('dermatologia.index',compact('valor_orden_derma','idpaciente','atendido'));
+                return  view('dermatologia.index',compact('valor_orden_derma','idpaciente','atendido','dermatologia_doctores'));
             }else{
                 return  view('dermatologia.error'); 
             }   

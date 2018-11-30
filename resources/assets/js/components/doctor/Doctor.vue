@@ -269,9 +269,10 @@ import spain from 'vee-validate/dist/locale/es';
                     cmp:this.doctor.cmp_update,
                     image_update:this.image_update
                 }).then(response=>{
-                     this.mensaje('Excelente',response.data.message,'success');
+                        this.mensaje('Excelente',response.data.message,'success');
                         $("#update_doctor_model").modal("hide");
                         this.limpiar();
+                        $("#intfile2").filestyle('clear');
                         this.readDoctor();
                 }).catch(error=>{
                    this.error_update = error.response.data;
@@ -377,9 +378,10 @@ import spain from 'vee-validate/dist/locale/es';
                 })
                     .then(response => {
                         this.error_update=[];
-                    	this.mensaje('Excelente',response.data.message,'success');
+                    	this.mensaje('Excelente',response.data.mensaje,response.data.tipo);
                         this.limpiar();
                         $("#add_doctor_model").modal("hide");
+                        $("#intfile").filestyle('clear');
                         this.readDoctor();
                     })
                     .catch(error => {

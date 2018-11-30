@@ -13,6 +13,15 @@
                           </div>  
                          </div>
                           <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                                <label for="doctor"> <strong>DOCTOR:</strong> </label>
+                                <select class="form-control input-sm">
+                                    <option value="">Seleccione</option> 
+                                    <option v-for="sel in doctor" :value="sel.id">{{sel.name}}</option>
+                                </select>
+                          </div>   
+                          </div><br>   
+                          <div class="row">
                             <div class="col-lg-1 col-md-1 col-xs-1">
                               <button class="btn btn-primary" v-on:click.prevent="imprimirder()">IMPRIMIR</button>
                             </div>
@@ -480,7 +489,7 @@ export default{
     components: {
      imprmir:imprmir
     },
-    props:['valor','valor2','atendido'],
+    props:['valor','valor2','atendido','doctor'],
     methods:{
             imprimirder(){
                $('#imprimirDerma').modal('show');

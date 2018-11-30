@@ -59,7 +59,8 @@ Route::get('/gettriajedat','TriajeController@listar');
 Route::get('/getdatostriaj','TriajeController@datos');
 Route::get('/getdermadat','DermatologiaController@listar');
 Route::get('/getdatosderma','DermatologiaController@datos');
-
+Route::get('/getantecededat','AntecedentesController@listar');
+Route::get('/getdatosantecede','AntecedentesController@datos');
 
 // Route::get('/comboesp','SpecialityController@especialiCombo');
 // Route::get('/comboequipo','EquipController@tospeciality');
@@ -90,3 +91,4 @@ Route::resource('doctor','DoctorController');
 Route::resource('atencion-ocupacional','AtencionOcupacionalController');
 Route::resource('triaje','TriajeController');
 Route::resource('dermatologia','DermatologiaController');
+Route::resource('antecedentes','AntecedentesController');

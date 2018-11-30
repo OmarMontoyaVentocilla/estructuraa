@@ -133,7 +133,7 @@
         </a>
                        </td>
 						<td>
-        <a target="_blank" v-bind:id="area_medicina+'-'+list.id+'x'" class="btn btn-default" href="#" style="display:none;">
+        <a target="_blank" v-bind:id="area_medicina+'-'+list.id+'x'" class="btn btn-default" :href="'/antecedentes/'+ list.id" style="display:none;">
             <img :src="`img/ocupacional/ante.png`" class="img-responsive" height="20" width="20">
         </a>                   
                         </td>

@@ -20109,7 +20109,7 @@ function convertOffset(x, y, degrees) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(142);
-module.exports = __webpack_require__(290);
+module.exports = __webpack_require__(295);
 
 
 /***/ }),
@@ -20180,6 +20180,7 @@ Vue.component('doctor', __webpack_require__(264));
 Vue.component('atenocup', __webpack_require__(269));
 Vue.component('triaje', __webpack_require__(275));
 Vue.component('dermatologia', __webpack_require__(280));
+Vue.component('antecedentes', __webpack_require__(290));
 var app = new Vue({
     el: '#app'
 });
@@ -98021,6 +98022,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.mensaje('Excelente', response.data.message, 'success');
                 $("#update_doctor_model").modal("hide");
                 _this.limpiar();
+                $("#intfile2").filestyle('clear');
                 _this.readDoctor();
             }).catch(function (error) {
                 _this.error_update = error.response.data;
@@ -98120,9 +98122,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 image: this.image
             }).then(function (response) {
                 _this3.error_update = [];
-                _this3.mensaje('Excelente', response.data.message, 'success');
+                _this3.mensaje('Excelente', response.data.mensaje, response.data.tipo);
                 _this3.limpiar();
                 $("#add_doctor_model").modal("hide");
+                $("#intfile").filestyle('clear');
                 _this3.readDoctor();
             }).catch(function (error) {
                 _this3.error = error.response.data;
@@ -100332,7 +100335,7 @@ var render = function() {
                               attrs: {
                                 target: "_blank",
                                 id: _vm.area_medicina + "-" + list.id + "x",
-                                href: "#"
+                                href: "/antecedentes/" + list.id
                               }
                             },
                             [
@@ -104430,6 +104433,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -104447,7 +104459,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         imprmir: __WEBPACK_IMPORTED_MODULE_1__Imprimir___default.a
     },
-    props: ['valor', 'valor2', 'atendido'],
+    props: ['valor', 'valor2', 'atendido', 'doctor'],
     methods: {
         imprimirder: function imprimirder() {
             $('#imprimirDerma').modal('show');
@@ -104769,6 +104781,30 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    { staticClass: "form-control input-sm" },
+                    [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ]),
+                      _vm._v(" "),
+                      _vm._l(_vm.doctor, function(sel) {
+                        return _c("option", { domProps: { value: sel.id } }, [
+                          _vm._v(_vm._s(sel.name))
+                        ])
+                      })
+                    ],
+                    2
+                  )
+                ])
+              ]),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
                 _c("div", { staticClass: "col-lg-1 col-md-1 col-xs-1" }, [
                   _c(
                     "button",
@@ -104785,13 +104821,13 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _vm._m(0)
+                _vm._m(1)
               ]),
               _c("br"),
               _vm._v(" "),
-              _vm._m(1),
+              _vm._m(2),
               _vm._v(" "),
-              _vm._m(2)
+              _vm._m(3)
             ])
           ])
         ])
@@ -104799,12 +104835,20 @@ var render = function() {
       _vm._v(" "),
       _c("imprmir"),
       _vm._v(" "),
-      _vm._m(3)
+      _vm._m(4)
     ],
     1
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "doctor" } }, [
+      _c("strong", [_vm._v("DOCTOR:")])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -105944,6 +105988,2048 @@ if (false) {
 
 /***/ }),
 /* 290 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(291)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(293)
+/* template */
+var __vue_template__ = __webpack_require__(294)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-63dd0355"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\antecedentes\\Antecedentes.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-63dd0355", Component.options)
+  } else {
+    hotAPI.reload("data-v-63dd0355", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 291 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(292);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("37f3bdf0", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63dd0355\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Antecedentes.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63dd0355\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Antecedentes.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 292 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\ndiv#habit_noc[data-v-63dd0355] {\r\n    font-size: 11px;\n}\n.td_auxiliar[data-v-63dd0355]{\r\nwidth: 75px;\r\nfont-size: 11px;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 293 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert2__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_sweetalert2__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+// import imprmir from './Imprimir';
+/* harmony default export */ __webpack_exports__["default"] = ({
+    created: function created() {
+        this.getdatosantecedentes();
+    },
+    data: function data() {
+        return {
+            lista_datos_antecedentes: []
+
+        };
+    },
+
+    components: {
+        //  imprmir:imprmir
+    },
+    props: ['valor', 'valor2', 'doctor'],
+    methods: {
+        // imprimirder(){
+        //    $('#imprimirDerma').modal('show');
+        // },
+        mensaje: function mensaje(titulo, texto, icono) {
+            __WEBPACK_IMPORTED_MODULE_0_sweetalert2___default()({
+                type: icono,
+                title: titulo,
+                text: texto,
+                showConfirmButton: false,
+                timer: 1500
+            });
+        },
+        printsexo: function printsexo(info) {
+            if (info == 1) {
+                return "MASCULINO";
+            } else if (info == 2) {
+                return "FEMENINO";
+            }
+        },
+        getdatosantecedentes: function getdatosantecedentes() {
+            var _this = this;
+
+            var urlantecedente = '/getantecededat';
+            var valor_orden = this.valor;
+            axios.get(urlantecedente, { params: { valor_orden: valor_orden } }).then(function (response) {
+                _this.lista_datos_antecedentes = response.data[0];
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+    },
+    computed: {}
+});
+
+/***/ }),
+/* 294 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "panel panel-default" }, [
+          _c("div", { staticClass: "panel-heading" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+                _c("p", [
+                  _c("strong", [_vm._v("PACIENTE:")]),
+                  _vm._v(
+                    " " + _vm._s(_vm.lista_datos_antecedentes.nombres_total)
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+                _c("p", [
+                  _c("strong", [_vm._v("FECHA:")]),
+                  _vm._v(" " + _vm._s(_vm.lista_datos_antecedentes.fecha))
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+                _c("p", [
+                  _c("strong", [_vm._v("EDAD:")]),
+                  _vm._v(
+                    " " + _vm._s(_vm.lista_datos_antecedentes.edad) + " años"
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+                _c("p", [
+                  _c("strong", [_vm._v("SEXO:")]),
+                  _vm._v(
+                    " " +
+                      _vm._s(_vm.printsexo(_vm.lista_datos_antecedentes.sexo))
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  { staticClass: "form-control input-sm" },
+                  [
+                    _c("option", { attrs: { value: "" } }, [
+                      _vm._v("Seleccione")
+                    ]),
+                    _vm._v(" "),
+                    _vm._l(_vm.doctor, function(sel) {
+                      return _c("option", { domProps: { value: sel.id } }, [
+                        _vm._v(_vm._s(sel.name))
+                      ])
+                    })
+                  ],
+                  2
+                )
+              ])
+            ]),
+            _c("br"),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
+                _c("div", { staticClass: "tab-content" }, [
+                  _vm._m(2),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "tab-pane fade", attrs: { id: "menu1" } },
+                    [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          { staticClass: "col-lg-12 col-md-12 col-xs-12" },
+                          [
+                            _c("br"),
+                            _vm._v(" "),
+                            _c(
+                              "table",
+                              { staticClass: "table table-striped" },
+                              [
+                                _c("tbody", [
+                                  _c("tr", [
+                                    _c(
+                                      "td",
+                                      { attrs: { colspan: "7" } },
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "checkbox",
+                                                    name: "optradio"
+                                                  }
+                                                }),
+                                                _c("strong", [
+                                                  _vm._v("VACUNAS COMPLETAS")
+                                                ])
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _vm._m(3),
+                                  _vm._v(" "),
+                                  _vm._m(4),
+                                  _vm._v(" "),
+                                  _vm._m(5),
+                                  _vm._v(" "),
+                                  _vm._m(6)
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "tab-pane fade", attrs: { id: "menu2" } },
+                    [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "col-lg-12 col-md-12 col-xs-12",
+                            attrs: { id: "habit_noc" }
+                          },
+                          [
+                            _c("br"),
+                            _vm._v(" "),
+                            _c(
+                              "table",
+                              { staticClass: "table table-striped" },
+                              [
+                                _c("tbody", [
+                                  _c("tr", [
+                                    _c(
+                                      "td",
+                                      {
+                                        staticStyle: { "font-size": "14px" },
+                                        attrs: { colspan: "8" }
+                                      },
+                                      [
+                                        _c("center", [
+                                          _c("strong", [
+                                            _vm._v("HÁBITOS NOCIVOS")
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _vm._m(7),
+                                  _vm._v(" "),
+                                  _vm._m(8),
+                                  _vm._v(" "),
+                                  _vm._m(9),
+                                  _vm._v(" "),
+                                  _vm._m(10),
+                                  _vm._v(" "),
+                                  _vm._m(11)
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "tab-pane fade", attrs: { id: "menu3" } },
+                    [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          { staticClass: "col-lg-12 col-md-12 col-xs-12" },
+                          [
+                            _c("br"),
+                            _vm._v(" "),
+                            _c(
+                              "table",
+                              { staticClass: "table table-striped" },
+                              [
+                                _c("tbody", [
+                                  _c("tr", [
+                                    _c(
+                                      "td",
+                                      { attrs: { colspan: "12" } },
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "checkbox",
+                                                    name: "optradio"
+                                                  }
+                                                }),
+                                                _c("strong", [
+                                                  _vm._v(
+                                                    "ANTECEDENTES FAMILIARES - NIEGA "
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _vm._m(12),
+                                  _vm._v(" "),
+                                  _vm._m(13),
+                                  _vm._v(" "),
+                                  _vm._m(14),
+                                  _vm._v(" "),
+                                  _vm._m(15)
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "tab-pane fade", attrs: { id: "menu4" } },
+                    [
+                      _vm._v(
+                        "\n                                ÑÑÑÑ\n                            "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "tab-pane fade", attrs: { id: "menu5" } },
+                    [
+                      _vm._v(
+                        "\n                                LL\n                            "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "tab-pane fade", attrs: { id: "menu6" } },
+                    [
+                      _vm._v(
+                        "\n                                GGGGGG\n                            "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "tab-pane fade", attrs: { id: "menu7" } },
+                    [
+                      _vm._v(
+                        "\n                                RR\n                            "
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "doctor" } }, [
+      _c("strong", [_vm._v("DOCTOR:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
+        _c("ul", { staticClass: "nav nav-tabs" }, [
+          _c("li", { staticClass: "active" }, [
+            _c("a", { attrs: { "data-toggle": "tab", href: "#home" } }, [
+              _vm._v("Personales")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { "data-toggle": "tab", href: "#menu1" } }, [
+              _vm._v("Agentes")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { "data-toggle": "tab", href: "#menu2" } }, [
+              _vm._v("Hábitos")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { "data-toggle": "tab", href: "#menu3" } }, [
+              _vm._v("Familiares")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { "data-toggle": "tab", href: "#menu4" } }, [
+              _vm._v("Patológicos|Enfermedades")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { "data-toggle": "tab", href: "#menu5" } }, [
+              _vm._v("Quirúrgicos")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { "data-toggle": "tab", href: "#menu6" } }, [
+              _vm._v("Reproductivos")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { "data-toggle": "tab", href: "#menu7" } }, [
+              _vm._v("Enfermedad Accidentes")
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "tab-pane fade in active", attrs: { id: "home" } },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+            _c("br"),
+            _vm._v(" "),
+            _c("table", { staticClass: "table table-striped" }, [
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", { attrs: { colspan: "2" } }, [
+                    _c("strong", [_vm._v("Lugar de Nacimiento")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("País:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Departamento:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Provincia:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Distrito:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Dirección:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("textarea", {
+                      staticClass: "form-control",
+                      attrs: {
+                        placeholder: "Escriba su respuesta",
+                        rows: "5",
+                        id: "comment"
+                      }
+                    })
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+            _c("br"),
+            _vm._v(" "),
+            _c("table", { staticClass: "table table-striped" }, [
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", { attrs: { colspan: "2" } }, [
+                    _c("strong", [_vm._v("Lugar de Procedencia")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("País:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Departamento:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Provincia:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Distrito:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("N° Departamento/ Interior:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Urbanización:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Dirección:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+            _c("br"),
+            _vm._v(" "),
+            _c("table", { staticClass: "table table-striped" }, [
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [_vm._v("Tipo de Operación:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Altitud de Labor:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Trabaja de noche:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Estado civil:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Area de Trabajo:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Puesto al que Postula:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Residencia en lugar de trabajo")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-6 col-md-6 col-xs-6" }, [
+            _c("br"),
+            _vm._v(" "),
+            _c("table", { staticClass: "table table-striped" }, [
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [_vm._v("Grado de Intrucción:")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("select", { staticClass: "form-control input-sm" }, [
+                      _c("option", { attrs: { value: "" } }, [
+                        _vm._v("Seleccione")
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Teléfono")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Contacto Referencia")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Parentesco")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Teléfono de emergencia")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [
+                    _vm._v("Tiempo de residencia en el lugar de trabajo")
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    }),
+                    _vm._v(
+                      " años\n                                                   "
+                    ),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    }),
+                    _vm._v(
+                      " meses\n                                                "
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td"),
+      _vm._v(" "),
+      _c("td", [_c("strong", [_vm._v("Vacuna")])]),
+      _vm._v(" "),
+      _c("td", [_c("strong", [_vm._v("Dosis")])]),
+      _vm._v(" "),
+      _c("td"),
+      _vm._v(" "),
+      _c("td"),
+      _vm._v(" "),
+      _c("td", [_c("strong", [_vm._v("Vacuna")])]),
+      _vm._v(" "),
+      _c("td", [_c("strong", [_vm._v("Dosis")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Hepatitis B")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td"),
+      _vm._v(" "),
+      _c("td", [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Fiebre Amarilla\t")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Tétanos")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td"),
+      _vm._v(" "),
+      _c("td", [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Otras")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Influenza")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { attrs: { colspan: "4" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [_vm._v("Tabaco")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Tipo mas frecuente:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Cantidad:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Frecuencia")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [_vm._v("Alcohol")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Tipo mas frecuente:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Cantidad:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Frecuencia")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [_vm._v("Drogas")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Tipo de droga que usa:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Cantidad:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Frecuencia")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [_vm._v("Medicamentos")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Tipo de medicamento:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Cantidad:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Frecuencia")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [_vm._v("Actividad Fisica")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("select", { staticClass: "form-control input-sm" }, [
+          _c("option", { attrs: { value: "" } }, [_vm._v("Seleccione")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Tipo de Act. Fisica:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Cantidad:")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [_vm._v("Frecuencia")]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("PAPÁ")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("HTA")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("DM")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("CA")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("ACV")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Convulsiones")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Asma Bronquial")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Enf. Reumatoide\t")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("TBC")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Otro")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("MAMÁ")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("HTA")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("DM")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("CA")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("ACV")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Convulsiones")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Asma Bronquial")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Enf. Reumatoide\t")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("TBC")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Otro")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("HERMANOS")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("HTA")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("DM")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("CA")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("ACV")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Convulsiones")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Asma Bronquial")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Enf. Reumatoide\t")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("TBC")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Otro")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("ESPOSO(A)\t")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("HTA")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("DM")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("CA")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("ACV")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Convulsiones")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Asma Bronquial")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Enf. Reumatoide\t")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("TBC")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Otro")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-63dd0355", module.exports)
+  }
+}
+
+/***/ }),
+/* 295 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

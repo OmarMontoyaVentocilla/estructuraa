@@ -120,14 +120,14 @@ class DoctorController extends Controller
             $doctor->firma=$filename;
             $doctor->estado='1';
             if($doctor->save()){
-                return response()->json([
-                    "success" => true,
+                return response()->json([       
+                    "tipo" => "success",
                      "mensaje" => "Se registro exitosamente",
                  ]);
               }
         }else if($usuarioid!=''){
                 return response()->json([
-                    "success" => true,
+                    "tipo" => "error",
                     "mensaje" => "Ya asigno a este usuario como doctor",
                 ]); 
         }
@@ -176,29 +176,45 @@ class DoctorController extends Controller
         
         // $this->validate($request,$rules,$messages);
         $doctor=Doctor::find($id);
-        $doctor->idsuariod= request('nombre_doctor');
-        request('cmp')=='' ? $doctor->cmp='' : $doctor->cmp=request('cmp');
+        $imgen_all=$request->get('image_update');   
+        if($imgen_all!=''){        
+            $doctor->idsuariod= request('nombre_doctor');
+            request('cmp')=='' ? $doctor->cmp='' : $doctor->cmp=request('cmp');
+            Storage::delete($doctor->firma); 
+            list($type,$imagenData)=explode(';',$imgen_all);
+            list(,$extension)=explode('/',$type);
+            list(,$imagenData)=explode(',',$imagenData); 
+            $filename=uniqid().".".$extension;
+            $destionation_path=public_path('img/'.$filename);
+            Image::make($imgen_all)->resize(100,100)->save($destionation_path);
+            $doctor->firma=$filename;
+            $doctor->estado='1';
+            if($doctor->save()){
+               return response()->json([
+                   "success" => true,
+                    "mensaje" => "Se registro exitosamente",
+                ]);
+            }
+        }else if($imgen_all==''){
+            $doctor->idsuariod= request('nombre_doctor');
+            request('cmp')=='' ? $doctor->cmp='' : $doctor->cmp=request('cmp');
+            //SELECCIONO EL NOMBRE DE ESA IMAGEN
+            $imgname=Doctor::where('id',$id)->where('estado',1)->select('firma')->get();
+            $doctor->firma=$imgname[0]->firma;
+            $doctor->estado='1';
+            if($doctor->save()){
+                return response()->json([
+                    "success" => true,
+                     "mensaje" => "Se registro exitosamente",
+                 ]);
+             }
 
-        //IMAGEN ANTIGUA    
-        Storage::delete($doctor->firma);
+        }
 
+        
 
-        $imgen_all=$request->get('image_update');      
-        list($type,$imagenData)=explode(';',$imgen_all);
-        list(,$extension)=explode('/',$type);
-        list(,$imagenData)=explode(',',$imagenData); 
-        $filename=uniqid().".".$extension;
-        $destionation_path=public_path('img/'.$filename);
-        Image::make($imgen_all)->resize(100,100)->save($destionation_path);
-        $doctor->firma=$filename;
-
-        $doctor->estado='1';
-          if($doctor->save()){
-            return response()->json([
-        		"success" => true,
-		 		"mensaje" => "Se registro exitosamente",
-             ]);
-          }
+        
+          
     }
 
     /**
