@@ -518,16 +518,409 @@
                                          </div>
                                 </div>
                                 <div id="menu4" class="tab-pane fade">
-                                    ÑÑÑÑ
+                                   <div class="row"> 
+                                    <div class="col-lg-12 col-md-12 col-xs-12">
+                                            <br>
+                                        <table class="table table-striped">
+                                                <tbody>
+                                                     <tr>
+                                                    <td colspan="3">
+                                                          <center>      
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="checkbox" name="optradio"><strong>ANTECEDENTES PATOLÓGICOS - NIEGA </strong> </label>
+                                                         </div>
+                                                          </center>
+                                                    </td>  
+                                                </tr>
+                                                <tr>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Alergías</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Diabetes</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">TBC</label></td>                
+                                                </tr>
+                                                <tr>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>                
+                                                </tr>
+                                                 <tr>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Hepatitis B</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Asma</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">HTA</label></td>                
+                                                </tr>
+                                                <tr>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>                
+                                                </tr>
+                                                 <tr>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">ITS</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Tifoidea</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Bronquitis</label></td>                
+                                                </tr>
+                                                <tr>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>                
+                                                </tr>
+                                                 <tr>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Neoplasia</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Convulsiones</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Intoxicaciones</label></td>                
+                                                </tr>
+                                                <tr>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>                
+                                                </tr>
+                                                 <tr>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Quemaduras</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Cirugías</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Otros</label></td>                
+                                                </tr>
+                                                <tr>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>                
+                                                </tr>
+                                                 <tr>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">Accidentes</label></td>
+                                    <td class="td_auxiliar"><label class="checkbox-inline"><input type="checkbox" name="optradio">RAM</label></td>
+                                    <td></td>                
+                                                </tr>
+                                                 <tr>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                    <td></td>                
+                                                </tr>
+                                                <tr>
+                                      <td><strong>Descripción</strong></td>
+                                    <td colspan="2"><textarea class="form-control" placeholder="Escriba una conclusion" rows="5" id="comment"></textarea></td>          
+                                                </tr>  
+                                                </tbody>
+                                        </table>
+                                    </div>
+                                   </div>    
                                 </div>
                                 <div id="menu5" class="tab-pane fade">
-                                    LL
+                                     <div class="row"> 
+                                    <div class="col-lg-12 col-md-12 col-xs-12">
+                                        <br>
+                                        <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="5">
+                                                     <center>      
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="checkbox" name="optradio"><strong>ANTECEDENTES QUIRURGICOS - NIEGA</strong> </label>
+                                                         </div>
+                                                          </center>
+                                                        </td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar">Fecha</td>
+                                                        <td class="td_auxiliar">Hospital/Clínica ( nombre - Lugar )	</td>
+                                                        <td class="td_auxiliar">Operación</td>
+                                                        <td class="td_auxiliar">D. Hosp.</td>
+                                                        <td class="td_auxiliar">Complicaciones</td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar">Fecha</td>
+                                                        <td class="td_auxiliar">Hospital/Clínica ( nombre - Lugar )	</td>
+                                                        <td class="td_auxiliar">Operación</td>
+                                                        <td class="td_auxiliar">D. Hosp.</td>
+                                                        <td class="td_auxiliar">Complicaciones</td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar">Fecha</td>
+                                                        <td class="td_auxiliar">Hospital/Clínica ( nombre - Lugar )	</td>
+                                                        <td class="td_auxiliar">Operación</td>
+                                                        <td class="td_auxiliar">D. Hosp.</td>
+                                                        <td class="td_auxiliar">Complicaciones</td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar">Fecha</td>
+                                                        <td class="td_auxiliar">Hospital/Clínica ( nombre - Lugar )	</td>
+                                                        <td class="td_auxiliar">Operación</td>
+                                                        <td class="td_auxiliar">D. Hosp.</td>
+                                                        <td class="td_auxiliar">Complicaciones</td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar">Fecha</td>
+                                                        <td class="td_auxiliar">Hospital/Clínica ( nombre - Lugar )	</td>
+                                                        <td class="td_auxiliar">Operación</td>
+                                                        <td class="td_auxiliar">D. Hosp.</td>
+                                                        <td class="td_auxiliar">Complicaciones</td>  
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>
+                                                        <td class="td_auxiliar"><input type="text" class="form-control"></td>  
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                    </div>
+                                     </div>    
                                 </div>
                                 <div id="menu6" class="tab-pane fade">
-                                    GGGGGG
+                                    <div class="row"> 
+                                    <div class="col-lg-12 col-md-12 col-xs-12" style="background-color:#f9f9f9;">
+                                      <p class="text-center"><strong>ANTECEDENTES DE REPRODUCCIÓN</strong></p> 
+                                    </div>
+                                    </div>
+                                     <div class="row" v-if="lista_datos_antecedentes.sexo==1"> 
+                                    <div class="col-lg-12 col-md-12 col-xs-12" style="background-color:#f9f9f9;">
+                                      <p><strong>EN CASO DE VARONES</strong></p> 
+                                    </div>
+                                    </div>
+                                    <div class="row" v-if="lista_datos_antecedentes.sexo==1"> 
+                                    <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Número de hijos vivos:</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Número de hijos dependientes:</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    </div><br>
+                                    <div class="row" v-if="lista_datos_antecedentes.sexo==1">
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Número de hijos fallecidos:</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    </div> 
+                                      <div class="row" v-if="lista_datos_antecedentes.sexo==2"> 
+                                    <div class="col-lg-12 col-md-12 col-xs-12" style="background-color:#f9f9f9;">
+                                      <p><strong>EN CASO DE DAMAS</strong></p> 
+                                    </div>
+                                    </div>
+                                    <div class="row" v-if="lista_datos_antecedentes.sexo==2">
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Régimen Catamenial:</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Número de partos:</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    </div> 
+                                     <br>
+                                     <div class="row" v-if="lista_datos_antecedentes.sexo==2">
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Gestaciones:</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Método Anticonceptivo:</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    </div> <br>
+                                    <div class="row" v-if="lista_datos_antecedentes.sexo==2">
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Número de hijos fallecidos:</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Fecha última menstruación</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    </div> <br>
+                                    <div class="row" v-if="lista_datos_antecedentes.sexo==2">
+                                    <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Número de hijos vivos:</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <p>Otros</p> 
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-xs-3">
+                                      <textarea class="form-control" placeholder="Escriba una conclusion" rows="5" id="comment"></textarea>
+                                    </div>
+                                    </div>     
                                 </div>
                                 <div id="menu7" class="tab-pane fade">
-                                    RR
+                                   <div class="row"> 
+                                    <div class="col-lg-12 col-md-12 col-xs-12">
+                                        <br>
+                                        <table class="table table-striped">
+                                             <tbody>
+                                               <tr>
+                                                   <td colspan="5">
+                                                      <center>    
+                                                       <strong>ENFERMEDADES Y ACCIDENTES</strong>
+                                                       </center>
+                                                    </td>   
+                                               </tr> 
+                                                <tr>
+                                        <td colspan="5">Absentismo, enfermedades y Accidentes (Asociado a trabajo o no)</td>   
+                                               </tr> 
+                                                 <tr>
+                                                 <td rowspan="2">Enfermedad, Accidente</td>
+                                                 <td colspan="2" align="center"><center>Asociado a Trabajo</center></td>
+                                                 <td rowspan="2" align="center"><center>Año</center></td>
+                                                 <td rowspan="2" align="center"><center>Dias de descanso</center></td>   
+                                               </tr>
+                                               <tr>
+                                                   <td align="center"><center>SI</center></td>
+                                                   <td align="center"><center>NO</center></td>
+                                              </tr> 
+                                               <tr>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                                   <td>  
+                                                       <center>  
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="radio" name="optradio"></label>
+                                                         </div>
+                                                         </center>
+                                                   </td>
+                                                   <td>   
+                                                         <center> 
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="radio" name="optradio"></label>
+                                                         </div>
+                                                         </center>
+                                                         
+                                                   </td>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                              </tr>
+                                               <tr>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                                   <td>  
+                                                       <center>  
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="radio" name="optradio"></label>
+                                                         </div>
+                                                         </center>
+                                                   </td>
+                                                   <td>   
+                                                         <center> 
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="radio" name="optradio"></label>
+                                                         </div>
+                                                         </center>
+                                                         
+                                                   </td>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                              </tr>
+                                               <tr>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                                   <td>  
+                                                       <center>  
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="radio" name="optradio"></label>
+                                                         </div>
+                                                         </center>
+                                                   </td>
+                                                   <td>   
+                                                         <center> 
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="radio" name="optradio"></label>
+                                                         </div>
+                                                         </center>
+                                                         
+                                                   </td>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                              </tr> 
+                                               <tr>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                                   <td>  
+                                                       <center>  
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="radio" name="optradio"></label>
+                                                         </div>
+                                                         </center>
+                                                   </td>
+                                                   <td>   
+                                                         <center> 
+                                                         <div class="radio">
+                                                <label class="checkbox-inline"><input type="radio" name="optradio"></label>
+                                                         </div>
+                                                         </center>
+                                                         
+                                                   </td>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                                   <td>
+                                                       <input type="text" class="form-control">
+                                                   </td>
+                                              </tr>     
+                                             </tbody>     
+                                        </table>
+                                    </div>
+                                   </div>
                                 </div>    
 
                                 </div>

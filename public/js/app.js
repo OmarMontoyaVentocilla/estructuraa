@@ -106627,6 +106627,399 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 // import imprmir from './Imprimir';
@@ -106950,9 +107343,82 @@ var render = function() {
                     "div",
                     { staticClass: "tab-pane fade", attrs: { id: "menu4" } },
                     [
-                      _vm._v(
-                        "\n                                ÑÑÑÑ\n                            "
-                      )
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          { staticClass: "col-lg-12 col-md-12 col-xs-12" },
+                          [
+                            _c("br"),
+                            _vm._v(" "),
+                            _c(
+                              "table",
+                              { staticClass: "table table-striped" },
+                              [
+                                _c("tbody", [
+                                  _c("tr", [
+                                    _c(
+                                      "td",
+                                      { attrs: { colspan: "3" } },
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "checkbox",
+                                                    name: "optradio"
+                                                  }
+                                                }),
+                                                _c("strong", [
+                                                  _vm._v(
+                                                    "ANTECEDENTES PATOLÓGICOS - NIEGA "
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _vm._m(16),
+                                  _vm._v(" "),
+                                  _vm._m(17),
+                                  _vm._v(" "),
+                                  _vm._m(18),
+                                  _vm._v(" "),
+                                  _vm._m(19),
+                                  _vm._v(" "),
+                                  _vm._m(20),
+                                  _vm._v(" "),
+                                  _vm._m(21),
+                                  _vm._v(" "),
+                                  _vm._m(22),
+                                  _vm._v(" "),
+                                  _vm._m(23),
+                                  _vm._v(" "),
+                                  _vm._m(24),
+                                  _vm._v(" "),
+                                  _vm._m(25),
+                                  _vm._v(" "),
+                                  _vm._m(26),
+                                  _vm._v(" "),
+                                  _vm._m(27),
+                                  _vm._v(" "),
+                                  _vm._m(28)
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ])
                     ]
                   ),
                   _vm._v(" "),
@@ -106960,9 +107426,76 @@ var render = function() {
                     "div",
                     { staticClass: "tab-pane fade", attrs: { id: "menu5" } },
                     [
-                      _vm._v(
-                        "\n                                LL\n                            "
-                      )
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          { staticClass: "col-lg-12 col-md-12 col-xs-12" },
+                          [
+                            _c("br"),
+                            _vm._v(" "),
+                            _c(
+                              "table",
+                              { staticClass: "table table-striped" },
+                              [
+                                _c("tbody", [
+                                  _c("tr", [
+                                    _c(
+                                      "td",
+                                      { attrs: { colspan: "5" } },
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "checkbox",
+                                                    name: "optradio"
+                                                  }
+                                                }),
+                                                _c("strong", [
+                                                  _vm._v(
+                                                    "ANTECEDENTES QUIRURGICOS - NIEGA"
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _vm._m(29),
+                                  _vm._v(" "),
+                                  _vm._m(30),
+                                  _vm._v(" "),
+                                  _vm._m(31),
+                                  _vm._v(" "),
+                                  _vm._m(32),
+                                  _vm._v(" "),
+                                  _vm._m(33),
+                                  _vm._v(" "),
+                                  _vm._m(34),
+                                  _vm._v(" "),
+                                  _vm._m(35),
+                                  _vm._v(" "),
+                                  _vm._m(36),
+                                  _vm._v(" "),
+                                  _vm._m(37),
+                                  _vm._v(" "),
+                                  _vm._m(38)
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ])
                     ]
                   ),
                   _vm._v(" "),
@@ -106970,9 +107503,90 @@ var render = function() {
                     "div",
                     { staticClass: "tab-pane fade", attrs: { id: "menu6" } },
                     [
-                      _vm._v(
-                        "\n                                GGGGGG\n                            "
-                      )
+                      _vm._m(39),
+                      _vm._v(" "),
+                      _vm.lista_datos_antecedentes.sexo == 1
+                        ? _c("div", { staticClass: "row" }, [_vm._m(40)])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.lista_datos_antecedentes.sexo == 1
+                        ? _c("div", { staticClass: "row" }, [
+                            _vm._m(41),
+                            _vm._v(" "),
+                            _vm._m(42),
+                            _vm._v(" "),
+                            _vm._m(43),
+                            _vm._v(" "),
+                            _vm._m(44)
+                          ])
+                        : _vm._e(),
+                      _c("br"),
+                      _vm._v(" "),
+                      _vm.lista_datos_antecedentes.sexo == 1
+                        ? _c("div", { staticClass: "row" }, [
+                            _vm._m(45),
+                            _vm._v(" "),
+                            _vm._m(46)
+                          ])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.lista_datos_antecedentes.sexo == 2
+                        ? _c("div", { staticClass: "row" }, [_vm._m(47)])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.lista_datos_antecedentes.sexo == 2
+                        ? _c("div", { staticClass: "row" }, [
+                            _vm._m(48),
+                            _vm._v(" "),
+                            _vm._m(49),
+                            _vm._v(" "),
+                            _vm._m(50),
+                            _vm._v(" "),
+                            _vm._m(51)
+                          ])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _vm.lista_datos_antecedentes.sexo == 2
+                        ? _c("div", { staticClass: "row" }, [
+                            _vm._m(52),
+                            _vm._v(" "),
+                            _vm._m(53),
+                            _vm._v(" "),
+                            _vm._m(54),
+                            _vm._v(" "),
+                            _vm._m(55)
+                          ])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _vm.lista_datos_antecedentes.sexo == 2
+                        ? _c("div", { staticClass: "row" }, [
+                            _vm._m(56),
+                            _vm._v(" "),
+                            _vm._m(57),
+                            _vm._v(" "),
+                            _vm._m(58),
+                            _vm._v(" "),
+                            _vm._m(59)
+                          ])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _vm.lista_datos_antecedentes.sexo == 2
+                        ? _c("div", { staticClass: "row" }, [
+                            _vm._m(60),
+                            _vm._v(" "),
+                            _vm._m(61),
+                            _vm._v(" "),
+                            _vm._m(62),
+                            _vm._v(" "),
+                            _vm._m(63)
+                          ])
+                        : _vm._e()
                     ]
                   ),
                   _vm._v(" "),
@@ -106980,9 +107594,329 @@ var render = function() {
                     "div",
                     { staticClass: "tab-pane fade", attrs: { id: "menu7" } },
                     [
-                      _vm._v(
-                        "\n                                RR\n                            "
-                      )
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          { staticClass: "col-lg-12 col-md-12 col-xs-12" },
+                          [
+                            _c("br"),
+                            _vm._v(" "),
+                            _c(
+                              "table",
+                              { staticClass: "table table-striped" },
+                              [
+                                _c("tbody", [
+                                  _c("tr", [
+                                    _c(
+                                      "td",
+                                      { attrs: { colspan: "5" } },
+                                      [
+                                        _c("center", [
+                                          _c("strong", [
+                                            _vm._v("ENFERMEDADES Y ACCIDENTES")
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _vm._m(64),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", { attrs: { rowspan: "2" } }, [
+                                      _vm._v("Enfermedad, Accidente")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      {
+                                        attrs: { colspan: "2", align: "center" }
+                                      },
+                                      [
+                                        _c("center", [
+                                          _vm._v("Asociado a Trabajo")
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      {
+                                        attrs: { rowspan: "2", align: "center" }
+                                      },
+                                      [_c("center", [_vm._v("Año")])],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      {
+                                        attrs: { rowspan: "2", align: "center" }
+                                      },
+                                      [
+                                        _c("center", [
+                                          _vm._v("Dias de descanso")
+                                        ])
+                                      ],
+                                      1
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c(
+                                      "td",
+                                      { attrs: { align: "center" } },
+                                      [_c("center", [_vm._v("SI")])],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      { attrs: { align: "center" } },
+                                      [_c("center", [_vm._v("NO")])],
+                                      1
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _vm._m(65),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "radio",
+                                                    name: "optradio"
+                                                  }
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "radio",
+                                                    name: "optradio"
+                                                  }
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _vm._m(66),
+                                    _vm._v(" "),
+                                    _vm._m(67)
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _vm._m(68),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "radio",
+                                                    name: "optradio"
+                                                  }
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "radio",
+                                                    name: "optradio"
+                                                  }
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _vm._m(69),
+                                    _vm._v(" "),
+                                    _vm._m(70)
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _vm._m(71),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "radio",
+                                                    name: "optradio"
+                                                  }
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "radio",
+                                                    name: "optradio"
+                                                  }
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _vm._m(72),
+                                    _vm._v(" "),
+                                    _vm._m(73)
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _vm._m(74),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "radio",
+                                                    name: "optradio"
+                                                  }
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c("center", [
+                                          _c("div", { staticClass: "radio" }, [
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "checkbox-inline"
+                                              },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    type: "radio",
+                                                    name: "optradio"
+                                                  }
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _vm._m(75),
+                                    _vm._v(" "),
+                                    _vm._m(76)
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ])
                     ]
                   )
                 ])
@@ -108016,6 +108950,844 @@ var staticRenderFns = [
       _c("td", { staticClass: "td_auxiliar" }, [
         _c("input", { staticClass: "form-control", attrs: { type: "text" } })
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Alergías")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Diabetes")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("TBC")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Hepatitis B")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Asma")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("HTA")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("ITS")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Tifoidea")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Bronquitis")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Neoplasia")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Convulsiones")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Intoxicaciones")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Quemaduras")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Cirugías")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Otros")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("Accidentes")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("label", { staticClass: "checkbox-inline" }, [
+          _c("input", { attrs: { type: "checkbox", name: "optradio" } }),
+          _vm._v("RAM")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("td")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", [_c("strong", [_vm._v("Descripción")])]),
+      _vm._v(" "),
+      _c("td", { attrs: { colspan: "2" } }, [
+        _c("textarea", {
+          staticClass: "form-control",
+          attrs: {
+            placeholder: "Escriba una conclusion",
+            rows: "5",
+            id: "comment"
+          }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Fecha")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _vm._v("Hospital/Clínica ( nombre - Lugar )\t")
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Operación")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("D. Hosp.")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Complicaciones")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Fecha")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _vm._v("Hospital/Clínica ( nombre - Lugar )\t")
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Operación")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("D. Hosp.")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Complicaciones")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Fecha")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _vm._v("Hospital/Clínica ( nombre - Lugar )\t")
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Operación")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("D. Hosp.")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Complicaciones")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Fecha")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _vm._v("Hospital/Clínica ( nombre - Lugar )\t")
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Operación")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("D. Hosp.")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Complicaciones")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Fecha")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _vm._v("Hospital/Clínica ( nombre - Lugar )\t")
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Operación")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("D. Hosp.")]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [_vm._v("Complicaciones")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ]),
+      _vm._v(" "),
+      _c("td", { staticClass: "td_auxiliar" }, [
+        _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        {
+          staticClass: "col-lg-12 col-md-12 col-xs-12",
+          staticStyle: { "background-color": "#f9f9f9" }
+        },
+        [
+          _c("p", { staticClass: "text-center" }, [
+            _c("strong", [_vm._v("ANTECEDENTES DE REPRODUCCIÓN")])
+          ])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "col-lg-12 col-md-12 col-xs-12",
+        staticStyle: { "background-color": "#f9f9f9" }
+      },
+      [_c("p", [_c("strong", [_vm._v("EN CASO DE VARONES")])])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Número de hijos vivos:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Número de hijos dependientes:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Número de hijos fallecidos:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "col-lg-12 col-md-12 col-xs-12",
+        staticStyle: { "background-color": "#f9f9f9" }
+      },
+      [_c("p", [_c("strong", [_vm._v("EN CASO DE DAMAS")])])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Régimen Catamenial:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Número de partos:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Gestaciones:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Método Anticonceptivo:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Número de hijos fallecidos:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Fecha última menstruación")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Número de hijos vivos:")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("p", [_vm._v("Otros")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-3 col-md-3 col-xs-3" }, [
+      _c("textarea", {
+        staticClass: "form-control",
+        attrs: {
+          placeholder: "Escriba una conclusion",
+          rows: "5",
+          id: "comment"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("td", { attrs: { colspan: "5" } }, [
+        _vm._v(
+          "Absentismo, enfermedades y Accidentes (Asociado a trabajo o no)"
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("input", { staticClass: "form-control", attrs: { type: "text" } })
     ])
   }
 ]
