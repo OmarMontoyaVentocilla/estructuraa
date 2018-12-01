@@ -6,6 +6,6 @@
  <antecedentes :valor="{{$valor_orden_antecede}}" :valor2="{{$idpaciente}}"  :doctor="{{$antecedentes_doctores}}">
  </antecedentes>
   
-</div>
+
   
 @stop
