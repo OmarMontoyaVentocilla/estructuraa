@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-10-2018 a las 06:55:44
+-- Tiempo de generación: 17-06-2019 a las 06:47:43
 -- Versión del servidor: 10.1.22-MariaDB
 -- Versión de PHP: 7.1.4
 
@@ -2083,6 +2083,7 @@ CREATE TABLE `companies` (
   `observacion` varchar(130) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `inscripcion` date DEFAULT NULL,
   `habilitar_extranet` char(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ejecutivo_ventas` varchar(150) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `estado` char(3) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pagina` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -2093,12 +2094,12 @@ CREATE TABLE `companies` (
 -- Volcado de datos para la tabla `companies`
 --
 
-INSERT INTO `companies` (`id`, `ruc`, `razon_social`, `nombre_comercial`, `actividad_economica`, `direccion`, `departament_id`, `province_id`, `distrit_id`, `rubro_mineria`, `rubro_contruccion`, `rubro_industria`, `rubro_comercio`, `rubro_banca`, `rubro_logistico`, `rubro_callcenter`, `rubro_otro`, `telefono_nro1`, `telefono_nro2`, `contacto_nr1`, `contacto_nro2`, `email_nr1`, `email_nr2`, `inicio_facturacion`, `corte_facturacion`, `envio_orden_compra`, `dias_credito`, `observacion`, `inscripcion`, `habilitar_extranet`, `estado`, `pagina`, `created_at`, `updated_at`) VALUES
-(1, '20524076218', 'GRUPO JB \'SYSTEM', 'MEDIWEB', 'DESARROLLO DE SOFTWARE OCUPACIONALES', 'AV MANUEL OLGUIN 335 OF 1205', 14, 1401, 1272, '1', '1', '1', '1', '1', '1', '1', '1', '987654678', '991092582', '12334434', '1232424323', 'programacion@mediwebperu.com', 'programacion2@mediwebperu.com', '2018-09-28', 7, 7, 20, 'Esta es mi oservacion', '2018-09-28', '1', '1', '1', '2018-09-28 22:51:24', '2018-09-29 11:46:46'),
-(3, '21514177229', 'GRUPO MONTEAGUDO', 'GRUPO MONTEAGUDO', 'CONTRUCCION Y SANEAMIENTO', 'AV GRAL. GARZON 1283', 14, 1401, 1252, '1', '', '', '', '', '', '', '', '991092582', '991092582', '991092582', '991092582', 'omar@programacion.com', '', '2018-09-28', 30, 30, 30, 'nada por observar', '2018-09-28', '1', '1', '16', '2018-09-29 03:13:48', '2018-09-29 03:13:48'),
-(4, '20536579746', 'KAJEMA SERVICES SAC', 'KAJEMA SERVICES SAC	', 'CONTRUCCION Y SANEAMIENTO', 'MZA. A LOTE. 5 A.H. AÑO NUEVO COMITE 116 (TERCER PISO)', 14, 1401, 1252, '1', '', '', '', '', '', '', '', '991092582', '991092582', '991092582', '991092582', 'omar@programacion.com', '', '2018-09-28', 30, 30, 30, 'nada por observar', '2018-09-28', '1', '1', '16', '2018-09-29 03:13:48', '2018-09-29 11:45:15'),
-(5, '20600899741', 'V & T SEGELSEG S.A.C.	', 'V & T SEGELSEG S.A.C.	', 'CONTRUCCION Y SANEAMIENTO', 'JR. ALONSO DEL RINCON NRO. 1564 P.J. EL PLANETA LIMA', 14, 1401, 1252, '1', '', '', '', '', '', '', '', '991092582', '991092582', '991092582', '991092582', 'omar@programacion.com', '', '2018-09-28', 30, 30, 30, 'nada por observar', '2018-09-28', '1', '1', '16', '2018-09-29 03:13:48', '2018-09-29 03:13:48'),
-(6, '20506626910', 'PICORP S.A.C.', 'PICORP S.A.C.', 'Chacra', 'AV. LOS CONDORES MZA. D LOTE. 8 URB. EL CLUB (PARADERO MACHINE) LIMA - LIMA - LURIGANCHO', 14, 1401, 1279, '1', '', '', '', '', '', '', '', '991592582', '991072582', '4564434', '3434344343', 'omarxw3372@gmail.com', 'omarmontoya372@gmail.com', '2018-10-04', 30, 30, 30, 'niguna', '2018-10-04', '1', '1', '1', '2018-10-05 02:20:48', '2018-10-05 02:20:48');
+INSERT INTO `companies` (`id`, `ruc`, `razon_social`, `nombre_comercial`, `actividad_economica`, `direccion`, `departament_id`, `province_id`, `distrit_id`, `rubro_mineria`, `rubro_contruccion`, `rubro_industria`, `rubro_comercio`, `rubro_banca`, `rubro_logistico`, `rubro_callcenter`, `rubro_otro`, `telefono_nro1`, `telefono_nro2`, `contacto_nr1`, `contacto_nro2`, `email_nr1`, `email_nr2`, `inicio_facturacion`, `corte_facturacion`, `envio_orden_compra`, `dias_credito`, `observacion`, `inscripcion`, `habilitar_extranet`, `ejecutivo_ventas`, `estado`, `pagina`, `created_at`, `updated_at`) VALUES
+(1, '20524076218', 'GRUPO JB \'SYSTEM', 'MEDIWEB', 'DESARROLLO DE SOFTWARE OCUPACIONALES', 'AV MANUEL OLGUIN 335 OF 1205', 14, 1401, 1272, '1', '1', '1', '1', '1', '1', '1', '1', '987654678', '991092582', '12334434', '1232424323', 'programacion@mediwebperu.com', 'programacion2@mediwebperu.com', '2018-09-28', 7, 7, 20, 'Esta es mi oservacion', '2018-09-28', '1', '2', '1', '1', '2018-09-28 22:51:24', '2018-09-29 11:46:46'),
+(3, '21514177229', 'GRUPO MONTEAGUDO', 'GRUPO MONTEAGUDO', 'CONTRUCCION Y SANEAMIENTO', 'AV GRAL. GARZON 1283', 14, 1401, 1252, '1', '', '', '', '', '', '', '', '991092582', '991092582', '991092582', '991092582', 'omar@programacion.com', '', '2018-09-28', 30, 30, 30, 'nada por observar', '2018-09-28', '1', '4', '1', '16', '2018-09-29 03:13:48', '2018-09-29 03:13:48'),
+(4, '20536579746', 'KAJEMA SERVICES SAC', 'KAJEMA SERVICES SAC	', 'CONTRUCCION Y SANEAMIENTO', 'MZA. A LOTE. 5 A.H. AÑO NUEVO COMITE 116 (TERCER PISO)', 14, 1401, 1252, '1', '', '', '', '', '', '', '', '991092582', '991092582', '991092582', '991092582', 'omar@programacion.com', '', '2018-09-28', 30, 30, 30, 'nada por observar', '2018-09-28', '1', '2', '1', '16', '2018-09-29 03:13:48', '2018-09-29 11:45:15'),
+(5, '20600899741', 'V & T SEGELSEG S.A.C.	', 'V & T SEGELSEG S.A.C.	', 'CONTRUCCION Y SANEAMIENTO', 'JR. ALONSO DEL RINCON NRO. 1564 P.J. EL PLANETA LIMA', 14, 1401, 1252, '1', '', '', '', '', '', '', '', '991092582', '991092582', '991092582', '991092582', 'omar@programacion.com', '', '2018-09-28', 30, 30, 30, 'nada por observar', '2018-09-28', '1', '2', '1', '16', '2018-09-29 03:13:48', '2018-09-29 03:13:48'),
+(6, '20506626910', 'PICORP S.A.C.', 'PICORP S.A.C.', 'Chacra', 'AV. LOS CONDORES MZA. D LOTE. 8 URB. EL CLUB (PARADERO MACHINE) LIMA - LIMA - LURIGANCHO', 14, 1401, 1279, '1', '', '', '', '', '', '', '', '991592582', '991072582', '4564434', '3434344343', 'omarxw3372@gmail.com', 'omarmontoya372@gmail.com', '2018-10-04', 30, 30, 30, 'niguna', '2018-10-04', '1', '2', '1', '1', '2018-10-05 02:20:48', '2018-10-05 02:20:48');
 
 -- --------------------------------------------------------
 
@@ -2143,6 +2144,61 @@ INSERT INTO `departaments` (`id`, `nombre`, `created_at`, `updated_at`) VALUES
 (23, 'Tumbes', '2018-04-24 10:55:45', '2018-04-24 10:55:45'),
 (24, 'Prov.Const. Del Callao', '2018-04-24 10:56:06', '2018-04-24 10:56:06'),
 (25, 'Ucayali', '2018-04-24 10:56:26', '2018-04-24 10:56:26');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `dermatologies`
+--
+
+CREATE TABLE `dermatologies` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `idcomprobante` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `idpaciente` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `iddoctor` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `fecha` date NOT NULL,
+  `opcion1` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `respuesta_opcion1` text COLLATE utf8mb4_unicode_ci,
+  `opcion2` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `respuesta1_opcion2` text COLLATE utf8mb4_unicode_ci,
+  `respuesta2_opcion2` text COLLATE utf8mb4_unicode_ci,
+  `opcion3` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `opcion4` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `opcion5` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `respuesta_opcion5` text COLLATE utf8mb4_unicode_ci,
+  `opcion6` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `respuesta_opcion6` text COLLATE utf8mb4_unicode_ci,
+  `opcion7` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `respuesta_opcion7` text COLLATE utf8mb4_unicode_ci,
+  `opcion8` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `opcion9` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `respuesta_opcion9` text COLLATE utf8mb4_unicode_ci,
+  `opcion10` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `opcion11` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `opcion12` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `respuesta_opcion12` text COLLATE utf8mb4_unicode_ci,
+  `opcion13` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `opcion14` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `opcion15` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `respuesta_opcion16` text COLLATE utf8mb4_unicode_ci,
+  `respuesta_opcion17` text COLLATE utf8mb4_unicode_ci,
+  `opcion18` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `opcion19` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `opcion20` varchar(5) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `conclusiones` text COLLATE utf8mb4_unicode_ci,
+  `cabeza` text COLLATE utf8mb4_unicode_ci,
+  `tronco` text COLLATE utf8mb4_unicode_ci,
+  `extremidades` text COLLATE utf8mb4_unicode_ci,
+  `wood` text COLLATE utf8mb4_unicode_ci,
+  `nokolsky` text COLLATE utf8mb4_unicode_ci,
+  `descripcion` text COLLATE utf8mb4_unicode_ci,
+  `atendido` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `revisado` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `auditado` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `estado` char(2) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -2224,39 +2280,96 @@ INSERT INTO `detailcatalogues` (`id`, `catalogue_id`, `examens_id`, `inscrito`, 
 (194, 40, '44', 'onx44', '1', '2018-10-22 06:54:12', '2018-10-22 06:54:12'),
 (195, 40, '108', 'onx108', '1', '2018-10-22 06:54:12', '2018-10-22 06:54:12'),
 (196, 40, '106', 'onx106', '1', '2018-10-22 06:54:12', '2018-10-22 06:54:12'),
-(197, 36, '1', 'onx1', '1', '2018-10-22 06:55:59', '2018-10-22 06:55:59'),
-(198, 36, '2', 'onx2', '1', '2018-10-22 06:55:59', '2018-10-22 06:55:59'),
-(199, 36, '5', 'onx5', '1', '2018-10-22 06:55:59', '2018-10-22 06:55:59'),
-(200, 36, '6', 'onx6', '1', '2018-10-22 06:55:59', '2018-10-22 06:55:59'),
-(201, 36, '7', 'onx7', '1', '2018-10-22 06:55:59', '2018-10-22 06:55:59'),
-(202, 36, '8', 'onx8', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(203, 36, '55', 'onx55', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(204, 36, '54', 'onx54', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(205, 36, '56', 'onx56', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(206, 36, '57', 'onx57', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(207, 36, '58', 'onx58', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(208, 36, '59', 'onx59', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(209, 36, '61', 'onx61', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(210, 36, '60', 'onx60', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(211, 36, '63', 'onx63', '1', '2018-10-22 06:56:00', '2018-10-22 06:56:00'),
-(212, 36, '62', 'onx62', '1', '2018-10-22 06:56:01', '2018-10-22 06:56:01'),
-(213, 36, '64', 'onx64', '1', '2018-10-22 06:56:01', '2018-10-22 06:56:01'),
-(214, 36, '65', 'onx65', '1', '2018-10-22 06:56:01', '2018-10-22 06:56:01'),
-(215, 36, '105', 'onx105', '1', '2018-10-22 06:56:01', '2018-10-22 06:56:01'),
-(216, 36, '9', 'onx9', '1', '2018-10-22 06:56:01', '2018-10-22 06:56:01'),
-(217, 36, '10', 'onx10', '1', '2018-10-22 06:56:01', '2018-10-22 06:56:01'),
-(218, 36, '11', 'onx11', '1', '2018-10-22 06:56:01', '2018-10-22 06:56:01'),
-(219, 36, '12', 'onx12', '1', '2018-10-22 06:56:01', '2018-10-22 06:56:01'),
-(220, 36, '13', 'onx13', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02'),
-(221, 36, '14', 'onx14', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02'),
-(222, 36, '15', 'onx15', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02'),
-(223, 36, '16', 'onx16', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02'),
-(224, 36, '42', 'onx42', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02'),
-(225, 36, '41', 'onx41', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02'),
-(226, 36, '40', 'onx40', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02'),
-(227, 36, '3', 'onx3', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02'),
-(228, 36, '35', 'onx35', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02'),
-(229, 36, '36', 'onx36', '1', '2018-10-22 06:56:02', '2018-10-22 06:56:02');
+(404, 36, '1', 'onx1', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(405, 36, '2', 'onx2', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(406, 36, '5', 'onx5', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(407, 36, '6', 'onx6', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(408, 36, '7', 'onx7', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(409, 36, '8', 'onx8', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(410, 36, '55', 'onx55', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(411, 36, '54', 'onx54', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(412, 36, '56', 'onx56', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(413, 36, '57', 'onx57', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(414, 36, '58', 'onx58', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(415, 36, '59', 'onx59', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(416, 36, '61', 'onx61', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(417, 36, '60', 'onx60', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(418, 36, '63', 'onx63', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(419, 36, '62', 'onx62', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(420, 36, '64', 'onx64', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(421, 36, '65', 'onx65', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(422, 36, '105', 'onx105', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(423, 36, '9', 'onx9', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(424, 36, '10', 'onx10', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(425, 36, '11', 'onx11', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(426, 36, '12', 'onx12', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(427, 36, '13', 'onx13', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(428, 36, '14', 'onx14', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(429, 36, '15', 'onx15', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(430, 36, '16', 'onx16', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(431, 36, '42', 'onx42', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(432, 36, '41', 'onx41', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(433, 36, '40', 'onx40', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(434, 36, '3', 'onx3', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(435, 36, '35', 'onx35', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(436, 36, '36', 'onx36', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(437, 36, '68', 'onx68', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(438, 36, '69', 'onx69', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(439, 36, '70', 'onx70', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(440, 36, '71', 'onx71', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(441, 36, '72', 'onx72', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(442, 36, '73', 'onx73', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(443, 36, '74', 'onx74', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(444, 36, '75', 'onx75', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(445, 36, '76', 'onx76', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(446, 36, '77', 'onx77', '1', '2018-11-16 02:49:25', '2018-11-16 02:49:25'),
+(447, 36, '78', 'onx78', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(448, 36, '79', 'onx79', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(449, 36, '80', 'onx80', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(450, 36, '81', 'onx81', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(451, 36, '82', 'onx82', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(452, 36, '85', 'onx85', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(453, 36, '86', 'onx86', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(454, 36, '84', 'onx84', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(455, 36, '83', 'onx83', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(456, 36, '87', 'onx87', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(457, 36, '88', 'onx88', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(458, 36, '89', 'onx89', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(459, 36, '90', 'onx90', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(460, 36, '91', 'onx91', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(461, 36, '92', 'onx92', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(462, 36, '93', 'onx93', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(463, 36, '94', 'onx94', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(464, 36, '97', 'onx97', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(465, 36, '95', 'onx95', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(466, 36, '96', 'onx96', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(467, 36, '98', 'onx98', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(468, 36, '99', 'onx99', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(469, 36, '100', 'onx100', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(470, 36, '104', 'onx104', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(471, 36, '103', 'onx103', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(472, 36, '102', 'onx102', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(473, 36, '101', 'onx101', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(474, 36, '45', 'onx45', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(475, 36, '46', 'onx46', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(476, 36, '47', 'onx47', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(477, 36, '49', 'onx49', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(478, 36, '48', 'onx48', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(479, 36, '51', 'onx51', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(480, 36, '50', 'onx50', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(481, 36, '52', 'onx52', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(482, 36, '53', 'onx53', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(483, 36, '44', 'onx44', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(484, 36, '109', 'onx109', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(485, 36, '4', 'onx4', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(486, 36, '108', 'onx108', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(487, 36, '107', 'onx107', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(488, 36, '106', 'onx106', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(489, 36, '112', 'onx112', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(490, 36, '113', 'onx113', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(491, 36, '110', 'onx110', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(492, 36, '111', 'onx111', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26'),
+(493, 36, '114', 'onx114', '1', '2018-11-16 02:49:26', '2018-11-16 02:49:26');
 
 -- --------------------------------------------------------
 
@@ -2387,7 +2500,13 @@ INSERT INTO `detail_exams` (`id`, `codigo`, `descripcion`, `exams_id`, `estado`,
 (106, '0001901', 'Evaluación dermatologico', 14, '1', '2018-10-03 11:34:26', '2018-10-03 11:34:26'),
 (107, '0001902', 'Screen Dermatologico', 14, '1', '2018-10-03 11:34:35', '2018-10-03 11:34:35'),
 (108, '000089', 'Evaluación neurologica', 13, '1', '2018-10-04 12:55:33', '2018-10-04 12:55:33'),
-(109, '000978', 'Evaluación cardiologia', 8, '1', '2018-10-07 13:31:35', '2018-10-07 13:31:35');
+(109, '000978', 'Evaluación cardiologia', 8, '1', '2018-10-07 13:31:35', '2018-10-07 13:31:35'),
+(110, 'X00RE', 'Evaluacion respiratoria', 20, '1', '2018-11-16 02:37:48', '2018-11-16 02:37:48'),
+(111, 'X003EC', 'Evaluacion ecografica', 19, '1', '2018-11-16 02:38:12', '2018-11-16 02:38:12'),
+(112, 'x00de', 'Evaluacion 7d', 17, '1', '2018-11-16 02:38:47', '2018-11-16 02:38:47'),
+(113, 'x00est', 'Evaluacion Estructural', 18, '1', '2018-11-16 02:39:09', '2018-11-16 02:39:09'),
+(114, 'EX00PS', 'Evaluacion Psiconsensometrica', 15, '1', '2018-11-16 02:39:31', '2018-11-16 02:39:31'),
+(115, 'x0004', 'Interconsulta', 16, '1', '2018-11-16 02:40:41', '2018-11-16 02:40:41');
 
 -- --------------------------------------------------------
 
@@ -16868,7 +16987,7 @@ INSERT INTO `distrits` (`id`, `nombre_distrito`, `provinces_id`, `departaments_i
 
 CREATE TABLE `doctors` (
   `id` int(10) UNSIGNED NOT NULL,
-  `nombre_doctor` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `idsuariod` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
   `cmp` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `firma` text COLLATE utf8mb4_unicode_ci,
   `estado` varchar(3) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -16880,10 +16999,9 @@ CREATE TABLE `doctors` (
 -- Volcado de datos para la tabla `doctors`
 --
 
-INSERT INTO `doctors` (`id`, `nombre_doctor`, `cmp`, `firma`, `estado`, `created_at`, `updated_at`) VALUES
-(5, 'grgfdgdggd', '3242424', '5bcd1b660de87.jpeg', '0', '2018-10-22 05:35:50', '2018-10-22 06:01:16'),
-(6, 'Manuel Eguzuiza', '15347865328s', '5bd3d5027a1ff.jpeg', '1', '2018-10-22 05:58:04', '2018-10-27 08:01:23'),
-(7, 'Omar Montoya Ventocill', '14325677', '5bd3d5720b041.jpeg', '0', '2018-10-27 08:02:58', '2018-10-27 08:03:21');
+INSERT INTO `doctors` (`id`, `idsuariod`, `cmp`, `firma`, `estado`, `created_at`, `updated_at`) VALUES
+(13, '1', '3534543543543', '5bfdd0de06cf6.jpeg', '1', '2018-11-28 04:18:57', '2018-11-28 04:18:57'),
+(14, '2', '43535353522', '5bff4109c9966.jpeg', '1', '2018-11-29 06:29:46', '2018-11-29 07:33:56');
 
 -- --------------------------------------------------------
 
@@ -17782,7 +17900,12 @@ INSERT INTO `exams` (`id`, `codigo`, `descripcion`, `estado`, `created_at`, `upd
 (12, '000012', 'Cuestionario nórdico', '1', '2018-10-02 03:59:34', '2018-10-02 03:59:34'),
 (13, '00016', 'Evaluación Neurológica', '1', '2018-10-03 11:33:34', '2018-10-03 11:33:34'),
 (14, '00017', 'Dermatología', '1', '2018-10-03 11:34:03', '2018-10-03 11:34:03'),
-(15, '000141', 'Evaluación psicosensometrica', '1', '2018-10-03 11:35:59', '2018-10-03 11:35:59');
+(15, '000141', 'Evaluación psicosensometrica', '1', '2018-10-03 11:35:59', '2018-10-03 11:35:59'),
+(16, '00006', 'Interconsulta', '1', '2018-11-08 05:00:00', '2018-11-08 05:00:00'),
+(17, '0005G5', 'Examen 7D', '1', '2018-11-08 05:00:00', '2018-11-08 05:00:00'),
+(18, 'X000644', 'Examen estructural', '1', '2018-11-07 05:00:00', '2018-11-07 05:00:00'),
+(19, 'X5678I8', 'Ecografia', '1', '2018-11-07 05:00:00', '2018-11-07 05:00:00'),
+(20, 'x4J6790', 'Sistema Respiratorio', '1', '2018-11-07 05:00:00', '2018-11-07 05:00:00');
 
 -- --------------------------------------------------------
 
@@ -18641,7 +18764,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (31, '2018_10_12_143113_create_pacients_table', 28),
 (32, '2018_10_12_160531_create_pais_table', 29),
 (33, '2018_10_15_054953_create_ordenatentions_table', 30),
-(34, '2018_10_20_064336_create_doctors_table', 30);
+(34, '2018_10_20_064336_create_doctors_table', 30),
+(35, '2018_11_09_213717_create_triajes_table', 31),
+(36, '2018_11_15_223430_create_dermatologies_table', 32);
 
 -- --------------------------------------------------------
 
@@ -18750,12 +18875,14 @@ CREATE TABLE `ordenatentions` (
 --
 
 INSERT INTO `ordenatentions` (`id`, `servicio`, `fecha`, `hora_inicio`, `nro_orden`, `empresa_id`, `id_paciente`, `area_id`, `profile_id`, `obra_id`, `tipoexam_id`, `id_subcontrata`, `idformato`, `subtotal`, `igv`, `total`, `examenes_vendidos`, `examenes_vendidos_precios`, `tipo_orden_atencion`, `estado`, `created_at`, `updated_at`) VALUES
-(1, '1', '2018-10-19', '23:42:01', '0000000001', 1, 1, 4, 4, 2, 1, '1', '1', '65.00', '11.70', '76.70', '1,2,5,65', '12,16,34,3', '1', '1', '2018-10-20 09:42:02', '2018-10-20 09:42:02'),
-(3, '1', '2018-10-19', '23:58:38', '0000000002', 1, 2, NULL, 4, NULL, 2, NULL, '1', '12.00', '2.16', '14.16', '1', '12', '1', '1', '2018-10-20 09:58:39', '2018-10-20 09:58:39'),
+(1, '1', '2018-10-17', '23:42:01', '0000000001', 1, 1, 4, 4, 2, 1, '1', '1', '65.00', '11.70', '76.70', '1,2,5,65', '12,16,34,3', '1', '1', '2018-10-20 09:42:02', '2018-10-20 09:42:02'),
+(3, '1', '2018-10-18', '23:58:38', '0000000002', 1, 2, NULL, 4, NULL, 2, NULL, '1', '12.00', '2.16', '14.16', '1', '12', '1', '1', '2018-10-20 09:58:39', '2018-10-20 09:58:39'),
 (4, '1', '2018-10-19', '0:0:05', '0000000004', 1, 1, 4, 4, 1, 1, NULL, '16', '65.00', '11.70', '76.70', '1,2,5,65', '12,16,34,3', '1', '1', '2018-10-20 10:00:06', '2018-10-20 10:00:06'),
 (5, '1', '2018-10-20', '0:14:50', '0000000005', 5, 3, NULL, 1, 11, 1, NULL, '16', '3.00', '0.54', '3.54', '54', '3', '1', '1', '2018-10-20 10:14:52', '2018-10-20 10:14:52'),
-(6, '1', '2018-10-20', '0:15:30', '0000000006', 5, 3, NULL, 1, 11, 5, NULL, '16', '6.00', '1.08', '7.08', '54', '6', '1', '1', '2018-10-20 10:15:31', '2018-10-20 10:15:31'),
-(7, '1', '2018-10-20', '0:24:40', '0000000007', 1, 4, NULL, 6, 2, 5, '4', '16', '6.00', '1.08', '7.08', '1,56', '2,4', '2', '1', '2018-10-20 10:24:40', '2018-10-20 10:24:40');
+(6, '1', '2018-10-20', '0:15:30', '0000000006', 5, 2, NULL, 1, 11, 5, NULL, '16', '6.00', '1.08', '7.08', '54', '6', '1', '1', '2018-10-20 10:15:31', '2018-11-07 03:52:08'),
+(7, '1', '2018-10-20', '0:24:40', '0000000007', 1, 4, NULL, 6, 2, 5, '4', '16', '6.00', '1.08', '7.08', '1,56', '2,4', '2', '1', '2018-10-20 10:24:40', '2018-10-20 10:24:40'),
+(8, '1', '2018-11-15', '16:47:08', '0000000008', 1, 3, 4, 4, 1, 1, NULL, '1', '183.00', '32.94', '215.94', '1,2,5,6,7,8,55,54,56,61,60,63,62,64,65,105,9,10,11,12,13,14,15,16,42,41,40,3,47,49,48,51,50,52,53,44,109,4,108,107,106,112,113,110,111', '12,16,34,3,3,3,3,3,3,3,3,3,3,3,3,1,5,3,1,1,3,1,1,3,3,3,2,1,2,10,10,1,1,1,1,2,4,4,4,4,1,3,5,2,2', '1', '0', '2018-11-16 02:47:09', '2018-11-16 02:50:06'),
+(9, '1', '2018-11-15', '16:56:30', '0000000009', 1, 3, 4, 4, 2, 1, NULL, '1', '185.00', '33.30', '218.30', '1,2,5,6,7,8,55,54,56,61,60,63,62,64,65,105,9,10,11,12,13,14,15,16,42,41,40,3,47,49,48,51,50,52,53,44,109,4,108,107,106,112,113,110,111,114', '12,16,34,3,3,3,3,3,3,3,3,3,3,3,3,1,5,3,1,1,3,1,1,3,3,3,2,1,2,10,10,1,1,1,1,2,4,4,4,4,1,3,5,2,2,2', '1', '1', '2018-11-16 02:56:31', '2018-11-16 02:56:31');
 
 -- --------------------------------------------------------
 
@@ -19175,7 +19302,7 @@ CREATE TABLE `protocols` (
 --
 
 INSERT INTO `protocols` (`id`, `company_id`, `subcontrata`, `descripcion`, `perfil_id`, `estado_protocolo`, `vigencia_inicial`, `vigencia_final`, `total_preocupacional`, `total_periodico`, `total_retiro`, `total_visita`, `total_reubicacion`, `datos_preocupacional`, `datos_periodico`, `datos_retiro`, `datos_visita`, `datos_reubicacion`, `codigo_protocolo`, `factura_protocolo`, `estado`, `created_at`, `updated_at`) VALUES
-(16, 1, '1', 'cccc', 4, '1', '2018-10-12', '2018-10-25', '79.00', '40.00', '42.00', '56.00', '46.00', '12,16,34,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,5,3,1,1,,1,1,,,,,1', '12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,2,3,3,2,,,,5,,,,1,,1', '16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,7,6,4,,,,,,7', '8,9,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,5,1,2,3,,,,,,8', '2,2,3,2,1,2,0,0,0,0,0,0,0,0,0,0,0,0,4,1,5,7,7,,,,,6,,,4', 'PQO', '1', '1', '2018-10-12 10:58:35', '2018-10-22 09:00:52'),
+(16, 1, '1', 'cccc', 4, '1', '2018-10-12', '2018-10-25', '185.00', '182.00', '182.00', '182.00', '187.00', '12,16,34,3,3,3,3,3,3,0,0,0,3,3,3,3,3,3,1,5,3,1,1,3,1,1,3,3,3,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,10,10,1,1,1,1,2,4,4,4,4,1,3,5,2,2,2', '12,3,3,3,3,3,3,3,3,0,0,0,3,3,3,3,0,3,11,2,3,3,2,3,3,3,5,3,3,2,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,10,10,10,10,1,1,2,1,6,6,4,1,4,6,2,4,2', '16,3,3,3,3,3,3,3,3,0,0,0,0,3,3,3,0,3,1,1,7,6,4,0,3,3,0,3,7,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,1,1,10,10,10,10,10,1,1,1,1,7,4,1,1,7,6,5,2', '8,9,18,0,3,3,3,3,3,0,0,0,3,3,3,3,3,3,2,5,1,2,3,3,3,0,0,0,8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,1,10,10,10,10,10,1,1,1,1,7,4,1,1,1,5,7,2', '2,2,3,2,1,2,3,3,3,0,0,0,0,3,3,3,3,3,4,1,5,7,7,3,3,3,3,6,0,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,10,1,10,10,10,10,10,1,1,1,1,7,4,1,1,2,6,7,2', 'PQO', '1', '1', '2018-10-12 10:58:35', '2018-11-16 02:49:51'),
 (17, 1, '1', 'xxxxx', 6, '3', '2018-10-12', '2018-10-31', '66.00', '20.56', '48.00', '15.00', '32.00', '1,6,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,5,4,2,,,2,8,5.6,1,7,3,4.6,7.8,7', '4,3,0,0,0,0,0,0,3.56,0,0,0,0,0,0,0,0,0,,,,,,5,3,2', '2,33,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,,,,,,,,1,1,1,1,2', '3,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,,,,,,,,3', '2,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,,,,,,3,3,,,5,,7,,8', 'PQO', '1', '1', '2018-10-12 11:01:56', '2018-10-22 06:58:46'),
 (18, 5, '4', 'bb', 1, '1', '2018-10-18', '2018-10-18', '3.00', '2.00', '1.00', '2.00', '6.00', '3,0,0,0', '2,0,0,0', '1,0,0,0', '1,1,0,0', '6,0,0,0', 'PQO', '1', '1', '2018-10-19 05:45:16', '2018-10-19 05:56:36');
 
@@ -19508,6 +19635,51 @@ INSERT INTO `tipo_exam` (`id`, `descripcion_ex`, `estado`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `triajes`
+--
+
+CREATE TABLE `triajes` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `idcomprobante` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `idpaciente` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `iddoctor` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `fecha` date NOT NULL,
+  `sistolica` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `diastolica` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fcardiaca` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fcrespiratoria` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sto2` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `talla` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `peso` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `imc` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pabodminal` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pte` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pti` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `temperatura` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `cintura` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pcadera` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `icc` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ptoraxico` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `atendido` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `revisado` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `auditado` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `estado` char(2) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `triajes`
+--
+
+INSERT INTO `triajes` (`id`, `idcomprobante`, `idpaciente`, `iddoctor`, `fecha`, `sistolica`, `diastolica`, `fcardiaca`, `fcrespiratoria`, `sto2`, `talla`, `peso`, `imc`, `pabodminal`, `pte`, `pti`, `temperatura`, `cintura`, `pcadera`, `icc`, `ptoraxico`, `atendido`, `revisado`, `auditado`, `estado`, `created_at`, `updated_at`) VALUES
+(6, '1', '1', '1', '2018-10-17', '11', '2', '3', '4', '5', '6', '7', '1944.44', '8', '9', '10', '11', '12', '13', '0.92', '14', 'on', '', '', '1', '2018-11-12 12:22:20', '2018-11-14 02:25:15'),
+(7, '4', '1', '1', '2018-10-19', '13', '12', '45', '23', '21', '172', '76', '25.69', '23', '25', '14', '19', '45', '34', '1.32', '34', 'on', '', '', '1', '2018-11-12 22:11:35', '2018-11-14 02:25:44'),
+(8, '9', '3', '1', '2018-11-26', '12', '12', '12', '12', '12', '12', '12', '833.33', '12', '12', '12', '12', '12', '12', '1.00', '12', 'on', '', '', '1', '2018-11-27 08:39:46', '2018-11-27 08:39:46');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `users`
 --
 
@@ -19528,7 +19700,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `password`, `remember_token`, `created_at`, `updated_at`, `estado`) VALUES
-(1, 'Omar montoya', 'omarx372@hotmail.com', 'omi123456', '$2y$10$rI5oFfT/3Mee96BAOTpsYepeEdAvG/l7f3xHEvZJYgG4SPI8pcXaW', 'd7cSzQCwSmnAjmFEQAys8StWP8uuWadjqp6EFg32bQ4s9K1tl7AUKKH24z1U', '2017-10-30 10:08:05', '2018-04-17 22:31:46', '1'),
+(1, 'Omar montoya', 'omarx372@hotmail.com', 'omi123456', '$2y$10$rI5oFfT/3Mee96BAOTpsYepeEdAvG/l7f3xHEvZJYgG4SPI8pcXaW', 'O1RhFQSZHD54mNcuWP78Ljh6AUjYCqEDYBslZAcqfyl9YwcuGhpjOlk72OAE', '2017-10-30 10:08:05', '2018-04-17 22:31:46', '1'),
 (2, 'liliana ventocillas', 'lilianas@hotmail.com', 'lili1234567', '$2y$10$R/4n8y4Fk.MH0X3Pb5iURuQLdpzxvmVZVoZ9XXnAcichBDk1vysmW', '3ignogNWix6e3fQRUM7NAnLntQYPnn9ERDd2MYFRxrelbWOvNyv4F4wm5hif', '2018-04-17 06:40:36', '2018-04-19 13:27:24', '1'),
 (3, 'juan montoya', 'juan@hotmail.com', 'juan123456', '$2y$10$1TgXKG3fwSmY6cqK.hu9k.p7dCN4IIC2jbX10.j1PcaYWoJ64bF8q', 'bNiFgJfHRciWPzIGFR8G1S08io3mxwIm384AfcC17gLMGkEIHS6mT00uTo9q', '2018-04-17 12:00:26', '2018-04-17 22:19:42', '0'),
 (4, 'juan montoya', 'juan123444@hotmail.com', 'juancito123456', '$2y$10$Ch0GYUheKyG8NsRphB6iguoFCSyMpxuVHG9oqtc69HwinGxWBsozK', 'iMA5Dzi3VkpeOf00tG4hLUIw2vxYYDtTOaGPqidOk8LuZJ4EmkxERagE8fem', '2018-04-19 13:30:16', '2018-04-19 13:30:16', '1');
@@ -19573,6 +19745,12 @@ ALTER TABLE `companies`
 -- Indices de la tabla `departaments`
 --
 ALTER TABLE `departaments`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `dermatologies`
+--
+ALTER TABLE `dermatologies`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -19739,6 +19917,12 @@ ALTER TABLE `tipo_exam`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `triajes`
+--
+ALTER TABLE `triajes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `users`
 --
 ALTER TABLE `users`
@@ -19781,15 +19965,20 @@ ALTER TABLE `companies`
 ALTER TABLE `departaments`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 --
+-- AUTO_INCREMENT de la tabla `dermatologies`
+--
+ALTER TABLE `dermatologies`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT de la tabla `detailcatalogues`
 --
 ALTER TABLE `detailcatalogues`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=230;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=494;
 --
 -- AUTO_INCREMENT de la tabla `detail_exams`
 --
 ALTER TABLE `detail_exams`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 --
 -- AUTO_INCREMENT de la tabla `diagnostcs`
 --
@@ -19804,7 +19993,7 @@ ALTER TABLE `distrits`
 -- AUTO_INCREMENT de la tabla `doctors`
 --
 ALTER TABLE `doctors`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT de la tabla `editorials`
 --
@@ -19819,7 +20008,7 @@ ALTER TABLE `equips`
 -- AUTO_INCREMENT de la tabla `exams`
 --
 ALTER TABLE `exams`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT de la tabla `idioms`
 --
@@ -19829,7 +20018,7 @@ ALTER TABLE `idioms`
 -- AUTO_INCREMENT de la tabla `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT de la tabla `obras`
 --
@@ -19839,7 +20028,7 @@ ALTER TABLE `obras`
 -- AUTO_INCREMENT de la tabla `ordenatentions`
 --
 ALTER TABLE `ordenatentions`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `pacients`
 --
@@ -19886,6 +20075,11 @@ ALTER TABLE `specialties`
 ALTER TABLE `tipo_exam`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
+-- AUTO_INCREMENT de la tabla `triajes`
+--
+ALTER TABLE `triajes`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
@@ -19923,47 +20117,6 @@ ALTER TABLE `detail_exams`
 --
 ALTER TABLE `model_has_permissions`
   ADD CONSTRAINT `model_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `model_has_roles`
---
-ALTER TABLE `model_has_roles`
-  ADD CONSTRAINT `model_has_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `obras`
---
-ALTER TABLE `obras`
-  ADD CONSTRAINT `obras_company_id_foreign` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `ordenatentions`
---
-ALTER TABLE `ordenatentions`
-  ADD CONSTRAINT `ordenatentions_area_id_foreign` FOREIGN KEY (`area_id`) REFERENCES `areas` (`id`),
-  ADD CONSTRAINT `ordenatentions_empresa_id_foreign` FOREIGN KEY (`empresa_id`) REFERENCES `companies` (`id`),
-  ADD CONSTRAINT `ordenatentions_obra_id_foreign` FOREIGN KEY (`obra_id`) REFERENCES `obras` (`id`),
-  ADD CONSTRAINT `ordenatentions_profile_id_foreign` FOREIGN KEY (`profile_id`) REFERENCES `profiles` (`id`);
-
---
--- Filtros para la tabla `profiles`
---
-ALTER TABLE `profiles`
-  ADD CONSTRAINT `profiles_company_id_foreign` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `protocols`
---
-ALTER TABLE `protocols`
-  ADD CONSTRAINT `protocols_company_id_foreign` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`),
-  ADD CONSTRAINT `protocols_perfil_id_foreign` FOREIGN KEY (`perfil_id`) REFERENCES `profiles` (`id`);
-
---
--- Filtros para la tabla `role_has_permissions`
---
-ALTER TABLE `role_has_permissions`
-  ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
